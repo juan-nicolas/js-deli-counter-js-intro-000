@@ -16,8 +16,9 @@ function currentLine(line){
   if (line.length > 0){
     lineString = "The line is currently: "
     for (var i = 0; i < line.length; i++){
-      lineString += `${i+1}. line[i], `
+      lineString += `${i+1}. ${line[i]}, `
     }
+    lineString = lineString.slice(0,-1);
   }
   return lineString;
 }
